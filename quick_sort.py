@@ -30,6 +30,7 @@ def partition(arr, start, end):
     p_indx = start
     for i in range(start, end):
           if arr[i] <= pivot:
+              print(arr[i], arr[p_indx] )
               arr[i], arr[p_indx] = arr[p_indx], arr[i]
               p_indx = p_indx + 1
               # print(arr,p_indx)
